@@ -1,0 +1,46 @@
+
+<div>
+<h1> Brewery Details</h1>
+<hr>
+<table id="brew">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let row of breweries">
+    <td *ngFor="let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+</table>
+</div>
+
+<div>
+<h4>Select Brewery Type</h4>
+
+<select  (change)="selectChange($event)">
+  <option  *ngFor="let item of breweries_unique_type">
+      {{item}}
+  </option>
+</select>
+
+<div *ngIf="typeselected">
+<h1> {{bre_type}} Brewery Details</h1>
+<table id="brew">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor="let row of breweriesByType">
+    <td *ngFor="let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+</table>
+
+</div>
+</div>

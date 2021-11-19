@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+
+#brew {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#brew td,
+#brew th {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+#brew tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+#brew tr:hover {
+  background-color: gray;
+}
+
+#brew th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+}
